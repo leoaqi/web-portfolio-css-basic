@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== REMIXICONS ===============-->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="/assets/css/style.css">
+
+        <title>Web portfolio dengan css</title>
+    </head>
+    <body>
+        <!--=============== HEADER ===============-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    <svg role="img" width="30"
+                        class="fill-current nav__logo-svg"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"><title>Pandora</title><path
+                            d="M1.882 0v24H8.32a1.085 1.085 0 001.085-1.085v-4.61h1.612c7.88 0 11.103-4.442 11.103-9.636C22.119 2.257 17.247 0 12.662 0H1.882Z" /></svg>
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li>
+                            <a href="#home" class="nav__link">Beranda</a>
+
+                        </li>
+                        <li>
+                            <a href="#about-us" class="nav__link">Tentang
+                                Saya</a>
+
+                        </li>
+                        <li>
+                            <a href="#portfolio" class="nav__link">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="nav__link">Kontak</a>
+                        </li>
+                    </ul>
+                    <!-- Close button -->
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-large-line"></i>
+                    </div>
+                </div>
+                <!-- Toggle menu -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </nav>
+        </header>
+
+        <!--=============== MAIN ===============-->
+        <main class="main">
+            <!--=============== HERO ===============-->
+            <section class="hero section" id="hero">
+                <div class="hero__container container grid">
+                    <div class="hero__content grid">
+                        <div class="hero__data">
+                            <h2 class="section__title">
+                                Halo semua, saya
+                            </h2>
+                            <h1 class="section__subtitle">Leo Christian Advendi
+                                Pratama</h1>
+                            <p class="hero__tagline">
+                                Mengubah Ide Menjadi Realitas Digital
+                            </p>
+                        </div>
+                        <div class="hero__img">
+                            <img
+                                src="assets/img/Leo_Christian-removebg-preview (1).png"
+                                alt="hero image" class="hero__person-img">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--=============== ABOUT ===============-->
+            <!-- <section class="about section">
+
+            </section> -->
+
+            <!--=============== Projects ===============-->
+            <section class="projects" id="portfolio">
+                <div class="projects__container">
+                    <div class="projects__info">
+                        <h1 class="section__title">
+                            Portfolio
+                        </h1>
+                        <h2 class="section__subtitle">Project Terbaru</h2>
+                        <h3>Berikut projek-projek yang pernah saya kerjakan baik itu android flutter ataupun web flutter, semua ini dibuat menggunakan flutter</h3>
+                    </div>
+
+                    <div class="projects__list">
+                        <div class="projects__card">
+                            <img src="/assets/img/adago.png" alt="image" class="projects__img">
+                            <h2>Adago</h2>
+                        </div>
+                        <div class="projects__card">
+                            <img src="/assets/img/officein.png" alt="image" class="projects__img">
+                            <h2>OfficeIn</h2>
+                        </div>
+                        <div class="projects__card">
+                            <img src="/assets/img/sehat-indo.png" alt="image" class="projects__img">
+                            <h2>Sehat Indonesiaku</h2>
+                        </div>
+                        <div class="projects__card">
+                            <img src="/assets/img/speaky.png" alt="image" class="projects__img">
+                            <h2>Speaky</h2>
+                        </div>
+                        <div class="projects__card">
+                            <img src="/assets/img/symbolicid.png" alt="image" class="projects__img">
+                            <h2>SymbolicID</h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--=============== CONTACT ===============-->
+            <section class="contact section">
+
+            </section>
+        </main>
+        <!--=============== FOOTER ===============-->
+        <footer class="footer">
+
+        </footer>
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
