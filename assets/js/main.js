@@ -66,7 +66,36 @@ const sr = ScrollReveal({
     reset: true
 })
 
-sr.reveal(`.hero__content, .skills__container, .projects__list, .contact__container`)
+sr.reveal(`.hero__content, .skills__container, .projects__list, .contact__container, .slideshow-container`)
 sr.reveal(`.hero__img, .skills__img`, { delay: 1000, origin:'right' })
 sr.reveal(`.skills__list, .skill__data`, { delay: 1000, origin:'left' })
 sr.reveal(`.projects__info, .projects__card`, { interval: 500})
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
